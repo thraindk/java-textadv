@@ -1,5 +1,5 @@
 # java-textadv
-Ein einfaches Textadventure-Engine, welches ich als Teil einer freien Übung während des Semesters 2021 geschrieben habe. Mit primitiver XML-ähnlicher Scriptfunktion, um selber Adventures schreiben zu können sowie einer Speicherfunktion. Wahlweise mit Swing UI oder in der Konsole. Architektur siehe Klassendiagramm.
+Ein einfaches Textadventure-Engine, welches ich als Teil einer freien Übung zum objektorientieren Programmieren während des Sommersemesters 2021 an der Hochschule Mannheim geschrieben habe. Mit primitiver XML-ähnlicher Scriptfunktion, um selber Adventures schreiben zu können sowie einer Speicherfunktion. Wahlweise mit Swing UI oder in der Konsole. Architektur siehe Klassendiagramm.
 
 
 Kurzanleitung
