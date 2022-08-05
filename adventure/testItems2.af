@@ -1,0 +1,25 @@
+% Cedric's Adventure Engine 1.0
+% Dies ist ein Kommentar
+% action = Schlüsselwort, benötigtes Item (optional), neues Item (optional), Szenentext, nachfolgende Szenen-Nr, Szenentext Item fehlt
+
+title=Devadventure
+autor=Cedric
+version=1
+
+stage=0
+text=Ich bin eingeschlossen, die Tür scheint magisch verriegelt. Im Raum befindet sich eine alte Holztruhe. An der Wand hängt ein Gemälde.
+item=schlüssel;Er glänzt goldfarben und hat einen gezackten Bart.
+action=tür;0;0;Sie bewegt sich keinen Milimeter, es ist zwecklos.;0
+action=truhe;schlüssel;0;Ich schliesse die Truhe auf, hebe den Deckel vorsichtig an und schaue hinein.;1;Die Truhe ist abgeschlossen, ich kann sie nicht öffnen. Wo ist der Schlüssel?
+action=raum;0;0;Der Raum ist karg eingerichtet und bietet nicht viel zu sehen.;0
+action=gemälde;0;schlüssel;Das Gemälde zeigt das Bild einer Frau, auf einem Stuhl sitzend. Ich hebe den Rahmen an, auf der Rückseite befindet sich ein Schlüssel.;0
+
+stage=1
+text=In der Truhe finde ich einen Zettel. Darauf steht: "Was schwimmt auf dem Meer und kräht?"
+action=zettel;0;0;So genau ich ihn auch betrachte, mehr ist darauf nicht zu entdecken;1
+action=wasserhahn;0;0;Das war die richtige Antwort *puff*;2
+endstage
+
+stage=2
+text=Die Tür öffnet sich wie von Zauberhand, ich bin frei!
+endstage

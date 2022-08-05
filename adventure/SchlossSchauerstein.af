@@ -1,0 +1,39 @@
+% Cedric's Adventure Engine 1.0
+% Dies ist ein Kommentar
+% action = Schlüsselwort, benötigtes Item (optional), neues Item (optional), Szenentext, nachfolgende Szenen-Nr, Szenentext Item fehlt
+% item = Schlüsselwort, Beschreibung
+
+title=Gefangen auf Schloss Schauerstein
+autor=Cedric
+version=1
+
+stage=0
+text=Ich wache auf, mein Schädel dröhnt. Ich befinde mich in einem staubigen Verlies. Überall Spinnenweben. Wie bin ich da nur hingekommen? Das Verlies ist durch dicke Eisengitter abgesperrt, die Tür zum Ausgang ist verschlossen. In der Ecke liegt ein Skelett, es ist sicher schon lange dort.
+action=tür;0;0;Sie bewegt sich keinen Milimeter, es ist zwecklos.;0
+action=verlies;0;0;Kaltes, feuchtes Mauerwerk. Steht sicher schon viele Jahrhunderte.;0
+action=spinnenweben;0;0;Ich hasse Spinnen.;0
+action=skelett;0;0;Hm, dass sollte ich mir mal genauer anschauen.;1
+endstage
+
+stage=1
+text=Viele Knochen. Der rechte Arm fehlt. Der Schädel lacht mich an.
+item=schlüssel;Unter dem Rost glänzt er goldfarben und hat einen gezackten Bart.
+action=knochen;0;0;Klapper, Klapper *hust*;1
+action=arm;0;0;Wo er den Arm wohl verloren hat? Naja, er braucht ihn ja jetzt nicht mehr;1
+action=schädel;0;schlüssel;Ich schaue mir den Schädel genauer an. Als ich Ihn hochhebe, fällt ein rostiger Schlüssel aus dem Kiefer. Ich hebe ihn auf. Passt er in die Verliestür?;1
+action=tür;schlüssel;0;Tatsächlich, er passt! Der Schlüssel lässt sich schwer drehen, aber langsam öffnet sich die Verliestür unter einem langem Knarzen;2;Sitzt bombenfest, da ist nichts zu machen.
+endstage
+
+stage=2
+text=Ich finde mich auf einem langen Flur wieder, unzählige Türen führen in verschiedene Richtungen. Kein Hinweis auf einen Ausgang.
+action=tür;0;0;An keiner dieser Türen ist ein Hinweis auf die Richtung zu erkennen. Es ist zwecklos, einfach darauf loszulaufen, ich würde mich verirren.;2
+action=richtungen;0;0;Es geht nach links ab, nach rechts, ja sogar Falltüren gibt es.;2
+action=flur;0;0;Ich gehe den Flur auf und ab, da fällt mir ein Stück Papier auf dem Boden auf.;2
+action=papier;0;zettel; Ich bücke mich und hebe einen Zettel vom Boden auf. Etwas steht darauf geschrieben;2
+item=zettel;In undeutlichen Worten steht geschrieben "Wie nennt .. man den Flur .. eines Iglus?"
+action=eisdiele;0;0;Das muss das Stichwort gewesen sein! Die zweite Tür von rechts.;3
+endstage
+
+stage=3
+text=Ich trete durch die Tür und steige eine steile Wendeltreppe empor. Es ist Tageslicht zu sehen. Geschafft!
+endstage
